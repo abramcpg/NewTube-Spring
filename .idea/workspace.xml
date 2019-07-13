@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/VideoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/VideoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/VideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/videoproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/videoproject.iml" afterDir="false" />
-    </list>
+    <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/videoproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -305,15 +292,15 @@
       <option name="presentableId" value="Default" />
       <updated>1562945999443</updated>
       <workItem from="1562946000928" duration="4415000" />
-      <workItem from="1562980622456" duration="1193000" />
+      <workItem from="1562980622456" duration="1472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5608000" />
+    <option name="totallyTimeSpent" value="5887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="23" width="788" height="777" extended-state="0" />
+    <frame x="161" y="23" width="788" height="777" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.42091152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
