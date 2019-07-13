@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-videoproject/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-videoproject/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/videoproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/videoproject.iml" afterDir="false" />
-    </list>
+    <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/videoproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="17" selection-start-line="17" selection-end-line="28" />
+            <state relative-caret-position="112">
+              <caret line="13" column="11" selection-start-line="13" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,10 +81,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="107">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,7 +190,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="169" />
+    <option name="x" value="504" />
     <option name="y" value="23" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
@@ -387,18 +393,18 @@
       <workItem from="1562946000928" duration="4415000" />
       <workItem from="1562980622456" duration="4484000" />
       <workItem from="1563045135721" duration="102000" />
-      <workItem from="1563046879062" duration="3921000" />
+      <workItem from="1563046879062" duration="4207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12922000" />
+    <option name="totallyTimeSpent" value="13208000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="23" y="23" width="1236" height="777" extended-state="0" />
+    <frame x="415" y="23" width="1236" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27303183" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27303183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -410,7 +416,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31824818" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46131387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,26 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -661,10 +647,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="17" selection-start-line="17" selection-end-line="28" />
+        <state relative-caret-position="112">
+          <caret line="13" column="11" selection-start-line="13" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -680,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="107">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -690,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
