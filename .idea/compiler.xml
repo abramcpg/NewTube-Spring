@@ -9,8 +9,8 @@
         <module name="videoproject" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="videoproject" target="1.6" />
+    <bytecodeTargetLevel target="8">
+      <module name="videoproject" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
