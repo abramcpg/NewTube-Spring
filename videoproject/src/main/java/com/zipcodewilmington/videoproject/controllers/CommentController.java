@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommentController {
 
 
-    @Autowired
     private CommentService service;
 
+    @Autowired
     public CommentController(CommentService service){
         this.service = service;
     }
