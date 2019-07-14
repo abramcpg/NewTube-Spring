@@ -12,7 +12,7 @@ public class Video {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int videoId;
+    private long videoId;
     private String videoName;
     //private byte[] video;
     private String videoPath;
@@ -25,13 +25,10 @@ public class Video {
         this.videoPath = videoPath;
         this.videoType = videoType;
         this.videoSize = videoSize;
+        //setVideoPath("http://localhost:8080/videos/" + this.videoId);
     }
 
-    public Video() {
-        this.videoName = "bleh";
-        this.videoPath = "bsdfgf";
-        this.videoType = "/mp4";
-    }
+    public Video() {}
 
 //    public Video(MultipartFile file) {
 //        this.videoName = StringUtils.cleanPath(file.getOriginalFilename());
@@ -40,11 +37,11 @@ public class Video {
 //        this.videoSize = videoSize;
 //    }
 
-    public int getVideoId() {
+    public long getVideoId() {
         return videoId;
     }
 
-    public void setVideoId(int videoId) {
+    public void setVideoId(long videoId) {
         this.videoId = videoId;
     }
 

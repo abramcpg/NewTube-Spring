@@ -37,18 +37,45 @@ public class VideoController {
     }
 
 
-    @PostMapping("/uploadFile")
+    @PostMapping("uploadFile")
     public Video uploadFile(@RequestParam("file") MultipartFile file) {
         String fileName = service.storeVideo(file);
 
         String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
+                //.path("videos/downloadFile/")
                 .path("videos/downloadFile/")
                 .path(fileName)
                 .toUriString();
 
-        return new Video(fileName, fileDownloadUri,
+        Video video = new Video(fileName, fileDownloadUri,
                 file.getContentType(), file.getSize());
+        create(video);
+        return video;
+
+//        return new Video(fileName, fileDownloadUri,
+//                file.getContentType(), file.getSize());
     }
+
+//    @PostMapping
+//    public Video postVideo(@RequestParam("video") Video video){
+//        return video;
+//    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<Video> create(@RequestBody Video video) {
+        return new ResponseEntity<>(service.create(video), HttpStatus.CREATED);
+    }
+
+
+//    @GetMapping("/videoStorage")
+//        public ResponseEntity<Iterable<Video>> getPostedVideos(){
+//            return new ResponseEntity<>(service.index(), HttpStatus.OK);
+//        }
+
+
+
+
+
 
 
     @GetMapping("/downloadFile/{fileName:.+}")

@@ -66,6 +66,12 @@ public class VideoService {
         }
     }
 
+    public Video create(Video video) {
+        return repository.save(video);
+    }
+
+
+
     public Resource loadFileAsResource(String fileName) {
         try {
             Path filePath = this.videoLocation.resolve(fileName).normalize();
