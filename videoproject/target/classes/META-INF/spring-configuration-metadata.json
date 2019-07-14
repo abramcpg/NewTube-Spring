@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "file",
+      "type": "com.zipcodewilmington.videoproject.services.StorageProperties",
+      "sourceType": "com.zipcodewilmington.videoproject.services.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "file.upload-dir",
+      "type": "java.lang.String",
+      "sourceType": "com.zipcodewilmington.videoproject.services.StorageProperties"
+    }
+  ],
+  "hints": []
+}

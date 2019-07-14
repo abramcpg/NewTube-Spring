@@ -15,10 +15,9 @@ public class User {
     private boolean loggedIn;
     private Date logInTime;
 
-<<<<<<< HEAD
 
     public User(){}
-=======
+
     public String getUserId() {
         return userId;
     }
@@ -46,7 +45,6 @@ public class User {
     public String getPassword() {
         return password;
     }
->>>>>>> 9a8eb62a36f51608a2a512ab8dd75d02c36a3072
 
     public void setPassword(String password) {
         this.password = password;
