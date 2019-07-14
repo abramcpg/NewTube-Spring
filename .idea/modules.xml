@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FullStack.MicroWebApplication-Server.iml" filepath="$PROJECT_DIR$/.idea/FullStack.MicroWebApplication-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoproject/demo.iml" filepath="$PROJECT_DIR$/videoproject/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/videoproject/videoproject.iml" filepath="$PROJECT_DIR$/videoproject/videoproject.iml" />
     </modules>
   </component>

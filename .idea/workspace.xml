@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videoproject/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_199.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/controllers/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/controllers/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/models/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/models/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/models/Video.class" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/models/Video.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/repositories/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/repositories/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/services/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/com/zipcodewilmington/videoproject/services/CommentService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/videoproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,25 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/MainApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="-78">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#449#450#0" expanded="true" />
@@ -60,16 +61,132 @@
                 <element signature="e#596#597#0" expanded="true" />
                 <element signature="e#638#639#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="196">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/VideoComments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/VideoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/CommentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/UserComment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +234,6 @@
         <option value="$PROJECT_DIR$/videoproject/src/main/angular-videoproject/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java" />
-        <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java" />
@@ -126,6 +242,7 @@
         <option value="$PROJECT_DIR$/videoproject/src/test/java/com/video/tests/MainTest.java" />
         <option value="$PROJECT_DIR$/videoproject/src/test/java/com/video/tests/components/MainTest.java" />
         <option value="$PROJECT_DIR$/videoproject/pom.xml" />
+        <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java" />
       </list>
     </option>
   </component>
@@ -148,8 +265,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-69" />
-    <option name="y" value="471" />
+    <option name="x" value="196" />
+    <option name="y" value="188" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
   </component>
@@ -158,8 +275,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,10 +337,32 @@
               <item name="videoproject" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FullStack.MicroWebApplication-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FullStack.MicroWebApplication-Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
+              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,6 +398,11 @@
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -272,7 +414,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MainApplication">
+  <component name="RunManager" selected="npm.Angular CLI Server (angular-videoproject)">
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="videoproject" />
       <extension name="coverage">
@@ -307,6 +449,19 @@
     <configuration name="Angular Application (angularclient)" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
+    <configuration name="MainApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.videoproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zipcodewilmington.videoproject.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="videoproject" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zipcodewilmington.videoproject.MainApplication" />
@@ -336,6 +491,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MainApplication (1)" />
         <item itemvalue="JUnit.MainTest" />
       </list>
     </recent_temporary>
@@ -355,6 +511,7 @@
       <workItem from="1563045135721" duration="102000" />
       <workItem from="1563046879062" duration="6886000" />
       <workItem from="1563056431720" duration="38000" />
+      <workItem from="1563070043359" duration="4488000" />
     </task>
     <servers />
   </component>
@@ -364,12 +521,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15925000" />
+    <option name="totallyTimeSpent" value="20413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="84" width="1236" height="777" extended-state="0" />
+    <frame x="43" y="23" width="1236" height="777" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27721944" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2721943" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -377,9 +534,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run Dashboard" visible="true" weight="0.5065693" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3970803" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3970803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +554,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.28140703" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.09966499" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
@@ -486,16 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/CommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -526,94 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="51" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="11" selection-start-line="13" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/VideoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="18" column="22" selection-start-line="18" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -656,10 +720,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/CommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#44#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/UserComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/VideoComments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/VideoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/Video.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="-78">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#449#450#0" expanded="true" />
@@ -670,16 +854,14 @@
             <element signature="e#596#597#0" expanded="true" />
             <element signature="e#638#639#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
           </folding>
         </state>
       </provider>
