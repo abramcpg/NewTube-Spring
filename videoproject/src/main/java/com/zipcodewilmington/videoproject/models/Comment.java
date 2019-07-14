@@ -1,18 +1,20 @@
 package com.zipcodewilmington.videoproject.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "COMMENTS",schema = "group4")
 public class Comment {
 
-    @Id //to identiyfy primary key
+    @Id //to identify primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "serial")
     private int commentId;
     private String commentText;
     private int videoId;
     private String userId;
+    private Date createDate;
 
     public int getCommentId() {
         return commentId;
@@ -44,5 +46,13 @@ public class Comment {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }
