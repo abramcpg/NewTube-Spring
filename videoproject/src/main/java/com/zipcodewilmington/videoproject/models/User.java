@@ -13,6 +13,7 @@ public class User {
     private Long id;
     private String username;
 
+
     public User(){}
 
     public User(String username) {
