@@ -1,55 +1,48 @@
 package com.zipcodewilmington.videoproject.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "video", schema = "group4")
 public class Video {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String title;
-    private String url;
-    private String userId;
+    private int videoId;
+    private String videoName;
+    private byte[] video;
+    private int userId;
 
-    public Video(){}
-
-    public Video(String title) {
-        this.title = title;
+    public int getVideoId() {
+        return videoId;
     }
 
-    public Long getId() {
-        return id;
+    public void setVideoId(int videoId) {
+        this.videoId = videoId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public String getVideoName() {
+        return videoName;
     }
 
-    public String getTitle() {
-        return title;
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public byte[] getVideo() {
+        return video;
     }
 
-    public String getUrl() {
-        return url;
+    public void setVideo(byte[] video) {
+        this.video = video;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
+
 }
