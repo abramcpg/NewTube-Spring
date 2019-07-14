@@ -7,12 +7,16 @@ import com.zipcodewilmington.videoproject.repositories.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 @Service
+@Transactional
 public class CommentService {
+
     @Autowired
     private CommentRepository repository;
 
@@ -30,5 +34,15 @@ public class CommentService {
         videoComments.setComments(userComments);
         return videoComments;
     }
+
+    public void postVideoComments(int videoId, UserComment userComment) {
+        Comment comment = new Comment();
+        comment.setCommentText(userComment.getText());
+        comment.setUserId(userComment.getUserId());
+        comment.setCreateDate(new Date());
+        comment.setVideoId(videoId);
+        repository.save(comment);
+    }
+
 
 }
