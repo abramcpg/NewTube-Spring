@@ -1,37 +1,48 @@
 package com.zipcodewilmington.videoproject.models;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "COMMENTS",schema = "group4")
 public class Comment {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String message;
+    @Id //to identiyfy primary key
+    private int commentId;
+    private String commentText;
+    private int videoId;
+    private String userId;
 
-    public Comment(){}
-
-    public Comment(String message) {
-        this.message = message;
+    public int getCommentId() {
+        return commentId;
     }
 
-    public Long getId() {
-        return id;
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public String getCommentText() {
+        return commentText;
     }
 
-    public String getMessage() {
-        return message;
+    public void setCommentText(String commentText) {
+        this.commentText = commentText;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public int getVideoId() {
+        return videoId;
+    }
+
+    public void setVideoId(int videoId) {
+        this.videoId = videoId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }
