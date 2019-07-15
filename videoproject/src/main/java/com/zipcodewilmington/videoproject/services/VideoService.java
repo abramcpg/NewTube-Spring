@@ -48,28 +48,62 @@ public class VideoService {
     }
 
 
-    public String storeVideo(MultipartFile file) {
+//    public String storeVideo(MultipartFile file) {
+//        String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+//        try {
+//            // Check if the file's name contains invalid characters
+//            if(fileName.contains("..")) {
+//                throw new StorageException("Sorry! Filename contains invalid path sequence " + fileName);
+//            }
+//
+//            // Copy file to the target location (Replacing existing file with the same name)
+//            Path targetLocation = this.videoLocation.resolve(fileName);
+//            Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
+//
+//            return fileName;
+//        } catch (IOException ex) {
+//            throw new StorageException("Could not store file " + fileName + ". Please try again!", ex);
+//        }
+//    }
+
+    public Video storeVideo(MultipartFile file) {
+        // Normalize file name
         String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+
         try {
             // Check if the file's name contains invalid characters
             if(fileName.contains("..")) {
                 throw new StorageException("Sorry! Filename contains invalid path sequence " + fileName);
             }
+            String fileDownloadUri = "http://localhost:8080/" + fileName;
 
-            // Copy file to the target location (Replacing existing file with the same name)
-            Path targetLocation = this.videoLocation.resolve(fileName);
-            Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
 
-            return fileName;
+
+            Video video = new Video(fileName, fileDownloadUri,
+                    file.getContentType(), file.getSize(), file.getBytes());
+
+            return repository.save(video);
         } catch (IOException ex) {
             throw new StorageException("Could not store file " + fileName + ". Please try again!", ex);
         }
     }
 
+
+
+
+
+
+
+
     public Video create(Video video) {
         return repository.save(video);
     }
 
+
+    public Video getFile(Long fileId) {
+        return repository.findById(fileId)
+                .orElseThrow(() -> new NotFoundException("File not found with id " + fileId));
+    }
 
 
     public Resource loadFileAsResource(String fileName) {
@@ -84,5 +118,14 @@ public class VideoService {
         } catch (MalformedURLException ex) {
             throw new NotFoundException("File not found " + fileName, ex);
         }
+    }
+
+
+    public Video update(Long id, Video newVideoData) {
+        Video video = repository.findById(id).get();
+        video.setVideoPath(newVideoData.getVideoPath());
+        video.setVideoName(newVideoData.getVideoName());
+        video.setUserId(newVideoData.getUserId());
+        return repository.save(video);
     }
 }

@@ -1,8 +1,7 @@
 package com.zipcodewilmington.videoproject.models;
 
 
-import org.springframework.util.StringUtils;
-import org.springframework.web.multipart.MultipartFile;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
@@ -14,11 +13,13 @@ public class Video {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long videoId;
     private String videoName;
-    //private byte[] video;
     private String videoPath;
     private String userId;
     private String videoType;
     private Long videoSize;
+    @Lob
+    @Type(type = "org.hibernate.type.BinaryType")
+    private byte[] videoBytes;
 
     public Video(String videoName, String videoPath, String videoType, Long videoSize) {
         this.videoName = videoName;
@@ -28,14 +29,17 @@ public class Video {
         //setVideoPath("http://localhost:8080/videos/" + this.videoId);
     }
 
+    public Video(String videoName, String videoPath, String videoType, Long videoSize, byte[] videoBytes) {
+        this.videoName = videoName;
+        this.videoPath = videoPath;
+        this.videoType = videoType;
+        this.videoSize = videoSize;
+        this.videoBytes = videoBytes;
+        //setVideoPath("http://localhost:8080/videos/" + this.videoId);
+    }
+
     public Video() {}
 
-//    public Video(MultipartFile file) {
-//        this.videoName = StringUtils.cleanPath(file.getOriginalFilename());
-//        this.videoPath = videoPath;
-//        this.videoType = videoType;
-//        this.videoSize = videoSize;
-//    }
 
     public long getVideoId() {
         return videoId;
@@ -53,12 +57,12 @@ public class Video {
         this.videoName = videoName;
     }
 //
-//    public byte[] getVideo() {
-//        return video;
+//    public byte[] getVideoBytes() {
+//        return videoBytes;
 //    }
 //
-//    public void setVideo(byte[] video) {
-//        this.video = video;
+//    public void setVideoBytes(byte[] videoBytes) {
+//        this.videoBytes = videoBytes;
 //    }
 
     public String getUserId() {
@@ -93,11 +97,11 @@ public class Video {
         this.videoSize = videoSize;
     }
 
-//    public byte[] getVideo() {
-//        return video;
-//    }
-//
-//    public void setVideo(byte[] video) {
-//        this.video = video;
-//    }
+    public byte[] getVideoBytes() {
+        return videoBytes;
+    }
+
+    public void setVideoBytes(byte[] videoBytes) {
+        this.videoBytes = videoBytes;
+    }
 }

@@ -7,6 +7,7 @@ import com.zipcodewilmington.videoproject.services.VideoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
@@ -38,18 +39,20 @@ public class VideoController {
 
 
     @PostMapping("uploadFile")
-    public Video uploadFile(@RequestParam("file") MultipartFile file) {
-        String fileName = service.storeVideo(file);
+    public Video uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
+        //String fileName = service.storeVideo(file);
+        Video video = service.storeVideo(file);
+        String videoName = video.getVideoName();
 
         String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
                 //.path("videos/downloadFile/")
-                .path("videos/downloadFile/")
-                .path(fileName)
+                .path("videos/")
+                .path(String.valueOf(video.getVideoId()))
                 .toUriString();
-
-        Video video = new Video(fileName, fileDownloadUri,
-                file.getContentType(), file.getSize());
-        create(video);
+        video.setVideoPath(fileDownloadUri);
+//        video = new Video(videoName, fileDownloadUri,
+//                file.getContentType(), file.getSize(), file.getBytes());
+        update(video.getVideoId(), video);
         return video;
 
 //        return new Video(fileName, fileDownloadUri,
@@ -66,36 +69,52 @@ public class VideoController {
         return new ResponseEntity<>(service.create(video), HttpStatus.CREATED);
     }
 
+    @RequestMapping(method = RequestMethod.PUT)
+    public ResponseEntity<Video> update(@PathVariable Long id, @RequestBody Video video) {
+        return new ResponseEntity<>(service.update(id, video), HttpStatus.OK);
+    }
+
 
 //    @GetMapping("/videoStorage")
 //        public ResponseEntity<Iterable<Video>> getPostedVideos(){
 //            return new ResponseEntity<>(service.index(), HttpStatus.OK);
 //        }
 
+    @GetMapping("/videos/{fileId}")
+    public ResponseEntity<Resource> downloadFile(@PathVariable Long fileId) {
+        // Load file from database
+        Video dbFile = service.getFile(fileId);
 
-
-
-
-
-
-    @GetMapping("/downloadFile/{fileName:.+}")
-    public ResponseEntity<Resource> getFile(@PathVariable String fileName, HttpServletRequest request) {
-        // Load file as Resource
-        Resource resource = service.loadFileAsResource(fileName);
-        //Resource resource = UrlResource("file:$videoLocation/$name");
-
-        // Try to determine file's content type
-        String contentType = null;
-        try {
-            contentType = request.getServletContext().getMimeType(resource.getFile().getAbsolutePath());
-        } catch (IOException ex) {
-            logger.info("Could not determine file type.");
-        }
         return ResponseEntity.ok()
-                .contentType(MediaType.parseMediaType(contentType))
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
-                .body(resource);
+                .contentType(MediaType.parseMediaType(dbFile.getVideoType()))
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + dbFile.getVideoName() + "\"")
+                .body(new ByteArrayResource(dbFile.getVideoBytes()));
     }
+
+
+
+
+
+
+
+//    @GetMapping("/downloadFile/{fileName:.+}")
+//    public ResponseEntity<Resource> getFile(@PathVariable String fileName, HttpServletRequest request) {
+//        // Load file as Resource
+//        Resource resource = service.loadFileAsResource(fileName);
+//        //Resource resource = UrlResource("file:$videoLocation/$name");
+//
+//        // Try to determine file's content type
+//        String contentType = null;
+//        try {
+//            contentType = request.getServletContext().getMimeType(resource.getFile().getAbsolutePath());
+//        } catch (IOException ex) {
+//            logger.info("Could not determine file type.");
+//        }
+//        return ResponseEntity.ok()
+//                .contentType(MediaType.parseMediaType(contentType))
+//                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+//                .body(resource);
+//    }
 
 
 

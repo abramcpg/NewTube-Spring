@@ -67,7 +67,7 @@
 * As a client, (not logged in) I
     * can upload new videos
 	* can view list of all videos
-	* can post simple text-comments on a video
+	* can post simple text-comments on a videoBytes
 
 
 
