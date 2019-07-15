@@ -64,6 +64,7 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
+*.xml
 
 # Logs and databases #
 ######################

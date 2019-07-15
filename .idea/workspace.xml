@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/static/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/videoproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
-              <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+            <state relative-caret-position="990">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -224,8 +221,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
-    <option name="y" value="23" />
+    <option name="x" value="123" />
+    <option name="y" value="415" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
   </component>
@@ -523,7 +520,7 @@
       <workItem from="1563046879062" duration="6886000" />
       <workItem from="1563056431720" duration="38000" />
       <workItem from="1563070043359" duration="4488000" />
-      <workItem from="1563117229748" duration="41021000" />
+      <workItem from="1563117229748" duration="41177000" />
     </task>
     <servers />
   </component>
@@ -533,7 +530,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61434000" />
+    <option name="totallyTimeSpent" value="61590000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,7 +542,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1236" height="777" extended-state="0" />
+    <frame x="123" y="415" width="1236" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22864321" />
@@ -1006,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        <state relative-caret-position="990">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
         </state>
       </provider>
     </entry>
