@@ -22,11 +22,13 @@ public class CommentService {
 
     public VideoComments getVideoComments(int videoId){
         Collection<Comment> comments = repository.findCommentByVideoId(videoId);
+        //converting database to JSON
         List<UserComment> userComments = new ArrayList<>();
         for(Comment comment : comments) {
             UserComment userComment = new UserComment();
             userComment.setUserId(comment.getUserId());
             userComment.setText(comment.getCommentText());
+            userComment.setCreatedDate(comment.getCreateDate().toString());
             userComments.add(userComment);
         }
         VideoComments videoComments = new VideoComments();

@@ -15,7 +15,6 @@ public class User {
     private boolean loggedIn;
     private Date logInTime;
 
-
     public User(){}
 
     public String getUserId() {
