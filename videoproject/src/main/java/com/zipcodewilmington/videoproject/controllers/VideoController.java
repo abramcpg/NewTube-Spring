@@ -59,6 +59,10 @@ public class VideoController {
         return new ResponseEntity<>(service.update(id, video), HttpStatus.OK);
     }
 
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Boolean> destroy(@PathVariable Long id) {
+        return new ResponseEntity<>(service.delete(id), HttpStatus.OK);
+    }
 
 
     @GetMapping("/{fileId}")

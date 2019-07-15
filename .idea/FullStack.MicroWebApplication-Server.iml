@@ -5,6 +5,8 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/videoproject/angularclient/dist" />
       <excludeFolder url="file://$MODULE_DIR$/videoproject/angularclient/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/videoproject/src/main/angular-newtube/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/videoproject/src/main/angular-newtube/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/videoproject/src/main/angular-videoproject/dist" />
       <excludeFolder url="file://$MODULE_DIR$/videoproject/src/main/angular-videoproject/tmp" />
     </content>

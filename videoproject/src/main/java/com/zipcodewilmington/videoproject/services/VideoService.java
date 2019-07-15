@@ -44,6 +44,11 @@ public class VideoService {
         return repository.save(video);
     }
 
+    public Boolean delete(Long id){
+        repository.deleteById(id);
+        return true;
+    }
+
 
     public Video getFile(Long fileId) {
         return repository.findById(fileId)
