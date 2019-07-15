@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/static/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/videoproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +36,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="12" selection-end-line="56" />
+            <state relative-caret-position="446">
+              <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-232">
+              <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -49,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+            <state relative-caret-position="267">
+              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -73,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="174">
+              <caret line="70" column="43" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1563165098589" expanded="true" signature="1099:1129" ph="..." />
@@ -140,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/videoproject/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/services/VideoService.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/MainApplication.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/repositories/CommentRepository.java" />
@@ -188,9 +198,10 @@
         <option value="$PROJECT_DIR$/videoproject/src/main/resources/static/css/main.css" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js" />
-        <option value="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" />
         <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts" />
+        <option value="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore" />
       </list>
     </option>
   </component>
@@ -213,8 +224,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="263" />
-    <option name="y" value="24" />
+    <option name="x" value="3" />
+    <option name="y" value="23" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
   </component>
@@ -249,33 +260,6 @@
               <item name="videoproject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FullStack.MicroWebApplication-Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-newtube" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FullStack.MicroWebApplication-Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-newtube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FullStack.MicroWebApplication-Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FullStack.MicroWebApplication-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="videoproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-newtube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FullStack.MicroWebApplication-Server" type="b2602c69:ProjectViewProjectNode" />
@@ -539,7 +523,7 @@
       <workItem from="1563046879062" duration="6886000" />
       <workItem from="1563056431720" duration="38000" />
       <workItem from="1563070043359" duration="4488000" />
-      <workItem from="1563117229748" duration="37974000" />
+      <workItem from="1563117229748" duration="41021000" />
     </task>
     <servers />
   </component>
@@ -549,7 +533,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58387000" />
+    <option name="totallyTimeSpent" value="61434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,10 +545,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="159" y="23" width="1236" height="777" extended-state="0" />
+    <frame x="3" y="23" width="1236" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36599666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22864321" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -605,13 +589,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/css/main.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -985,24 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1563165098589" expanded="true" signature="1099:1129" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="12" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1022,8 +981,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+        <state relative-caret-position="267">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1563165098589" expanded="true" signature="1099:1129" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
         </state>
       </provider>
     </entry>
