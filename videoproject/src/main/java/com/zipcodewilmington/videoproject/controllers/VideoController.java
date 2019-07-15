@@ -1,8 +1,6 @@
 package com.zipcodewilmington.videoproject.controllers;
 
-import com.zipcodewilmington.videoproject.models.User;
 import com.zipcodewilmington.videoproject.models.Video;
-import com.zipcodewilmington.videoproject.services.UserService;
 import com.zipcodewilmington.videoproject.services.VideoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,11 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/videos")
@@ -39,30 +32,19 @@ public class VideoController {
 
 
     @PostMapping("uploadFile")
-    public Video uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
-        //String fileName = service.storeVideo(file);
+    public Video uploadFile(@RequestParam("file") MultipartFile file) {
         Video video = service.storeVideo(file);
-        String videoName = video.getVideoName();
 
         String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
-                //.path("videos/downloadFile/")
                 .path("videos/")
                 .path(String.valueOf(video.getVideoId()))
                 .toUriString();
         video.setVideoPath(fileDownloadUri);
-//        video = new Video(videoName, fileDownloadUri,
-//                file.getContentType(), file.getSize(), file.getBytes());
         update(video.getVideoId(), video);
         return video;
-
-//        return new Video(fileName, fileDownloadUri,
-//                file.getContentType(), file.getSize());
     }
 
-//    @PostMapping
-//    public Video postVideo(@RequestParam("video") Video video){
-//        return video;
-//    }
+
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Video> create(@RequestBody Video video) {
@@ -75,14 +57,9 @@ public class VideoController {
     }
 
 
-//    @GetMapping("/videoStorage")
-//        public ResponseEntity<Iterable<Video>> getPostedVideos(){
-//            return new ResponseEntity<>(service.index(), HttpStatus.OK);
-//        }
 
-    @GetMapping("/videos/{fileId}")
+    @GetMapping("/{fileId}")
     public ResponseEntity<Resource> downloadFile(@PathVariable Long fileId) {
-        // Load file from database
         Video dbFile = service.getFile(fileId);
 
         return ResponseEntity.ok()
@@ -94,27 +71,6 @@ public class VideoController {
 
 
 
-
-
-
-//    @GetMapping("/downloadFile/{fileName:.+}")
-//    public ResponseEntity<Resource> getFile(@PathVariable String fileName, HttpServletRequest request) {
-//        // Load file as Resource
-//        Resource resource = service.loadFileAsResource(fileName);
-//        //Resource resource = UrlResource("file:$videoLocation/$name");
-//
-//        // Try to determine file's content type
-//        String contentType = null;
-//        try {
-//            contentType = request.getServletContext().getMimeType(resource.getFile().getAbsolutePath());
-//        } catch (IOException ex) {
-//            logger.info("Could not determine file type.");
-//        }
-//        return ResponseEntity.ok()
-//                .contentType(MediaType.parseMediaType(contentType))
-//                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
-//                .body(resource);
-//    }
 
 
 

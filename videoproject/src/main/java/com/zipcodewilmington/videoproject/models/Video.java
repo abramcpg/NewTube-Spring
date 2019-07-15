@@ -26,7 +26,6 @@ public class Video {
         this.videoPath = videoPath;
         this.videoType = videoType;
         this.videoSize = videoSize;
-        //setVideoPath("http://localhost:8080/videos/" + this.videoId);
     }
 
     public Video(String videoName, String videoPath, String videoType, Long videoSize, byte[] videoBytes) {
@@ -35,7 +34,6 @@ public class Video {
         this.videoType = videoType;
         this.videoSize = videoSize;
         this.videoBytes = videoBytes;
-        //setVideoPath("http://localhost:8080/videos/" + this.videoId);
     }
 
     public Video() {}
@@ -56,14 +54,6 @@ public class Video {
     public void setVideoName(String videoName) {
         this.videoName = videoName;
     }
-//
-//    public byte[] getVideoBytes() {
-//        return videoBytes;
-//    }
-//
-//    public void setVideoBytes(byte[] videoBytes) {
-//        this.videoBytes = videoBytes;
-//    }
 
     public String getUserId() {
         return userId;
