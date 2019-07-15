@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca6cba1-870f-48c8-b73d-155a98d6f28f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoproject/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/target/classes/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/videoproject/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,26 +34,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="-350">
+              <caret line="12" selection-end-line="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="132">
+              <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/videoproject/src/main/java/services/CommentService.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/services/VideoService.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/MainApplication.java" />
@@ -164,7 +172,6 @@
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/StorageProperties.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/MainApplication.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" />
         <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/services/UserService.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/User.java" />
@@ -182,6 +189,8 @@
         <option value="$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/VideoController.java" />
         <option value="$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js" />
         <option value="$PROJECT_DIR$/videoproject/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html" />
+        <option value="$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts" />
       </list>
     </option>
   </component>
@@ -204,8 +213,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="159" />
-    <option name="y" value="23" />
+    <option name="x" value="263" />
+    <option name="y" value="24" />
     <option name="width" value="1236" />
     <option name="height" value="777" />
   </component>
@@ -530,7 +539,7 @@
       <workItem from="1563046879062" duration="6886000" />
       <workItem from="1563056431720" duration="38000" />
       <workItem from="1563070043359" duration="4488000" />
-      <workItem from="1563117229748" duration="37123000" />
+      <workItem from="1563117229748" duration="37974000" />
     </task>
     <servers />
   </component>
@@ -540,7 +549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57536000" />
+    <option name="totallyTimeSpent" value="58387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,13 +605,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/models/UserComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/java/com/zipcodewilmington/videoproject/controllers/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -994,24 +996,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-350">
+          <caret line="12" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="429">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/angular-newtube/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoproject/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
         </state>
       </provider>
     </entry>
