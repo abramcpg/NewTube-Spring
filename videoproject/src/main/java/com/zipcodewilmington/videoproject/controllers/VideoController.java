@@ -31,6 +31,9 @@ public class VideoController {
     }
 
 
+
+
+
     @PostMapping("uploadFile")
     public Video uploadFile(@RequestParam("file") MultipartFile file) {
         Video video = service.storeVideo(file);
@@ -60,12 +63,12 @@ public class VideoController {
 
     @GetMapping("/{fileId}")
     public ResponseEntity<Resource> downloadFile(@PathVariable Long fileId) {
-        Video dbFile = service.getFile(fileId);
+        Video video = service.getFile(fileId);
 
         return ResponseEntity.ok()
-                .contentType(MediaType.parseMediaType(dbFile.getVideoType()))
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + dbFile.getVideoName() + "\"")
-                .body(new ByteArrayResource(dbFile.getVideoBytes()));
+                .contentType(MediaType.parseMediaType(video.getVideoType()))
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + video.getVideoName() + "\"")
+                .body(new ByteArrayResource(video.getVideoBytes()));
     }
 
 

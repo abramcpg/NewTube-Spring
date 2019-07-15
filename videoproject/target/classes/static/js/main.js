@@ -18,7 +18,7 @@ function uploadSingleFile(file) {
         var response = JSON.parse(xhr.responseText);
         if(xhr.status == 200) {
             singleFileUploadError.style.display = "none";
-            singleFileUploadSuccess.innerHTML = "<p>File Uploaded Successfully.</p><p>DownloadUrl : <a href='" + response.videoPath + "' target='_blank'>" + response.videoPath + "</a></p>";
+            singleFileUploadSuccess.innerHTML = "<p>File Uploaded Successfully.</p><p>Url : <a href='" + response.videoPath + "' target='_blank'>" + response.videoPath + "</a></p>";
             singleFileUploadSuccess.style.display = "block";
         } else {
             singleFileUploadSuccess.style.display = "none";
@@ -43,3 +43,16 @@ singleUploadForm.addEventListener('submit', function(event){
     event.preventDefault();
 }, true);
 
+
+function getUrl(){
+    var url = ScriptApp.getService().getUrl();
+    return url;
+}
+
+function doGet(requestInfo) {
+    var url = ScriptApp.getService().getUrl();
+    if (requestInfo.parameter && requestInfo.parameter['page'] == '2') {
+        return HtmlService.createTemplateFromFile('FILE2').evaluate();
+    }
+    return HtmlService.createTemplateFromFile('FILE1').evaluate();
+}
