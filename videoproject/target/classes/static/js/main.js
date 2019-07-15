@@ -44,15 +44,3 @@ singleUploadForm.addEventListener('submit', function(event){
 }, true);
 
 
-function getUrl(){
-    var url = ScriptApp.getService().getUrl();
-    return url;
-}
-
-function doGet(requestInfo) {
-    var url = ScriptApp.getService().getUrl();
-    if (requestInfo.parameter && requestInfo.parameter['page'] == '2') {
-        return HtmlService.createTemplateFromFile('FILE2').evaluate();
-    }
-    return HtmlService.createTemplateFromFile('FILE1').evaluate();
-}
