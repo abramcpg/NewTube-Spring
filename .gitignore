@@ -37,8 +37,6 @@ ehthumbs.db
 Thumbs.db
 
 
-*/target/*
-*.idea/
-*.json
-*.iml
-
+target/
+**/node_modules/
+**/dist/
