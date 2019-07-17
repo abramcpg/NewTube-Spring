@@ -17,7 +17,7 @@ export class VideoService {
     return this.http.get<Video[]>(this.videoUrl);
   }
 
-  public save(video: Video) {
-    return this.http.post<Video>(this.videoUrl, video);
+  public save(fileToUpload: File) {
+    return this.http.post<Video>(this.videoUrl + "/uploadFile", fileToUpload);
   }
 }

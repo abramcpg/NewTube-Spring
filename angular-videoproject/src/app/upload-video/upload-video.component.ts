@@ -19,11 +19,19 @@ export class UploadVideoComponent {
   }
 
   onSubmit() {
-    this.videoService.save(this.video).subscribe(result => this.gotoUserList());
+    this.videoService.save(this.video).subscribe(result => this.gotoVideoList());
   }
 
-  gotoUserList() {
+  gotoVideoList() {
     this.router.navigate(['/videos']);
   }
+
+  // upload(fileToUpload : EventSource){
+  //   this.videoService.save(fileToUpload);
+  // }
+
+
+
+
 }
 
