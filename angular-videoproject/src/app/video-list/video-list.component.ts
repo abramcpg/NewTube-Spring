@@ -19,4 +19,29 @@ export class VideoListComponent implements OnInit {
       this.videos = data;
     });
   }
+
+  switchVideo(video: Video){
+
+    console.log(video.videoPath);
+
+    let videoPlayer = document.getElementById('myVideo');
+    //let videoPlayer = document.createElement("video");
+
+
+    // if (videoPlayer.hasChildNodes()){
+    //   videoPlayer.removeChild(videoPlayer.firstChild);
+    // }
+
+    let source = document.createElement('source');
+    //let type = document.createElement('type');
+
+
+    source.setAttribute('src', video.videoPath);
+    source.setAttribute('type', video.videoType);
+
+
+    videoPlayer.appendChild(source);
+    //document.body.replaceChild(ogVideoPlayer, videoPlayer);
+
+  }
 }

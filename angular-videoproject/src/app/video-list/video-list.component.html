@@ -3,16 +3,17 @@
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title</th>
-                <th scope="col">Link</th>
+                <th scope="col">PLAY</th>
+                <th scope="col">TITLE</th>
+                <th scope="col">DOWNLOAD</th>
             </tr>
             </thead>
             <tbody>
             <tr *ngFor="let video of videos">
-                <td>{{ video.id }}</td>
-                <td>{{ video.videoPath }}</td>
-                <td><a href="mailto:{{ video.id }}">{{ video.videoName }}</a></td>
+                <td> <button (click)="switchVideo(video)"
+                             class="switchVid">&#9658;</button> </td>
+                <td>{{ video.videoName }}</td>
+                <td><a href="{{ video.videoPath }}">download</a></td>
             </tr>
             </tbody>
         </table>
