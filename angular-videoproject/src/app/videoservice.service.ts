@@ -9,7 +9,7 @@ export class VideoService {
   private videoUrl: string;
 
   constructor(private http: HttpClient) {
-    this.videoUrl = 'http://localhost:8080/videos';
+    this.videoUrl = 'https://video-new-tube.herokuapp.com/';
   }
 
   public findAll(): Observable<Video[]> {
@@ -17,7 +17,7 @@ export class VideoService {
     return this.http.get<Video[]>(this.videoUrl);
   }
 
-  public save(fileToUpload: File) {
+  public save(fileToUpload: Video) {
     return this.http.post<Video>(this.videoUrl + "/uploadFile", fileToUpload);
   }
 }
