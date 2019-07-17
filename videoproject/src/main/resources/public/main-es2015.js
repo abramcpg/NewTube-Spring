@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"card bg-dark my-5\">\n        <div class=\"card-body\">\n          <h2 class=\"card-title text-center text-white py-3\">{{ title }}</h2>\n          <ul class=\"text-center list-inline py-3\">\n            <li class=\"list-inline-item\"><a routerLink=\"/videos\" class=\"btn btn-info\">Videos</a></li>\n            <li class=\"list-inline-item\"><a routerLink=\"/adduser\" class=\"btn btn-info\">Upload Video</a></li>\n          </ul>\n        </div>\n      </div>\n      <div>\n        <video class=\"center\" id=\"player\" height=\"300\" width=\"420\" autoplay=\"autoplay\" controls>\n          <source src=\"https://video-new-tube.herokuapp.com/videos/33\" type=\"video/mp4\">\n          Your current browser is unsupported.\n        </video>\n      </div>\n      <app-comments userId=\"abc\" videoId=\"1\"></app-comments>\n      <router-outlet></router-outlet>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <div class=\"card bg-dark my-5\">\n        <div class=\"card-body\">\n          <h2 class=\"card-title text-center text-white py-3\">{{ title }}</h2>\n          <ul class=\"text-center list-inline py-3\">\n            <li class=\"list-inline-item\"><a routerLink=\"/videos\" class=\"btn btn-info\">Videos</a></li>\n            <li class=\"list-inline-item\"><a routerLink=\"/adduser\" class=\"btn btn-info\">Upload Video</a></li>\n          </ul>\n        </div>\n      </div>\n      <app-comments userId=\"abc\" videoId=\"1\"></app-comments>\n      <router-outlet></router-outlet>\n    </div>\n  </div>\n  <video class=\"center\" id=\"myVideo\" height=\"300\" width=\"420\" autoplay=\"autoplay\" controls>\n<!--    <source src=\"http://localhost:8080/videos/33\" type=\"video/mp4\">-->\n    Your current browser is unsupported.\n  </video>\n</div>\n<div>\n  <video class=\"center\" id=\"player\" height=\"300\" width=\"420\" autoplay=\"autoplay\" controls>\n    <source src=\"http://localhost:8080/videos/33\" type=\"video/mp4\">\n    Your current browser is unsupported.\n  </video>\n</div>\n"
 
 /***/ }),
 
@@ -63,7 +63,7 @@ module.exports = "<div class=\"card my-5\">\n    <div class=\"card-body\">\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card my-5\">\n    <div class=\"card-body\">\n        <table class=\"table table-bordered table-striped\">\n            <thead class=\"thead-dark\">\n            <tr>\n                <th scope=\"col\">#</th>\n                <th scope=\"col\">Title</th>\n                <th scope=\"col\">Link</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr *ngFor=\"let video of videos\">\n                <td>{{ video.id }}</td>\n                <td>{{ video.videoPath }}</td>\n                <td><a href=\"mailto:{{ video.id }}\">{{ video.videoName }}</a></td>\n            </tr>\n            </tbody>\n        </table>\n    </div>\n</div>"
+module.exports = "<div class=\"card my-5\">\n    <div class=\"card-body\">\n        <table class=\"table table-bordered table-striped\">\n            <thead class=\"thead-dark\">\n            <tr>\n                <th scope=\"col\">PLAY</th>\n                <th scope=\"col\">TITLE</th>\n                <th scope=\"col\">DOWNLOAD</th>\n            </tr>\n            </thead>\n            <tbody>\n            <tr *ngFor=\"let video of videos\">\n                <td> <button (click)=\"switchVideo(video)\"\n                             class=\"switchVid\">&#9658;</button> </td>\n                <td>{{ video.videoName }}</td>\n                <td><a href=\"{{ video.videoPath }}\">download</a></td>\n            </tr>\n            </tbody>\n        </table>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -448,6 +448,20 @@ let VideoListComponent = class VideoListComponent {
         this.videoService.findAll().subscribe(data => {
             this.videos = data;
         });
+    }
+    switchVideo(video) {
+        console.log(video.videoPath);
+        let videoPlayer = document.getElementById('myVideo');
+        //let videoPlayer = document.createElement("video");
+        // if (videoPlayer.hasChildNodes()){
+        //   videoPlayer.removeChild(videoPlayer.firstChild);
+        // }
+        let source = document.createElement('source');
+        //let type = document.createElement('type');
+        source.setAttribute('src', video.videoPath);
+        source.setAttribute('type', video.videoType);
+        videoPlayer.appendChild(source);
+        //document.body.replaceChild(ogVideoPlayer, videoPlayer);
     }
 };
 VideoListComponent.ctorParameters = () => [
