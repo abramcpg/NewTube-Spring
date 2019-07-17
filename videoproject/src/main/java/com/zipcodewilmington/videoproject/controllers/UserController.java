@@ -2,6 +2,7 @@ package com.zipcodewilmington.videoproject.controllers;
 
 import com.zipcodewilmington.videoproject.models.Comment;
 import com.zipcodewilmington.videoproject.models.User;
+import com.zipcodewilmington.videoproject.models.UserJson;
 import com.zipcodewilmington.videoproject.services.CommentService;
 import com.zipcodewilmington.videoproject.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/users")
+
 public class UserController {
     private UserService service;
 
@@ -19,16 +20,14 @@ public class UserController {
         this.service = service;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<Iterable<User>> index(){
-        return new ResponseEntity<>(service.index(), HttpStatus.OK);
+    @RequestMapping(method = RequestMethod.GET, value = "/users/{userId}")
+    public UserJson getVideoComments(@PathVariable("userId") String userId) {
+        return service.getUserJson(userId);
     }
-
-    @PostMapping
-    public ResponseEntity<User> create(@RequestBody User user) {
-        return new ResponseEntity<>(service.create(user), HttpStatus.CREATED);
+    @RequestMapping(method = RequestMethod.POST,value = "/users")
+    public void postUserJson(@RequestBody UserJson userJson) {
+        service.postUserJson(userJson);
     }
-
 
 
 }
