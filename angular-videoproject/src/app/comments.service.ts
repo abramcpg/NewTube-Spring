@@ -13,7 +13,7 @@ export class CommentsService {
 
   constructor(private http: HttpClient) { }
   public getComments(videoId) : Observable<VideoComments> {
-    return this.http.get<VideoComments>("https://video-new-tube.herokuapp.com/"+videoId+"/comments").pipe(
+    return this.http.get<VideoComments>("https://video-new-tube.herokuapp.com/videos/"+videoId+"/comments").pipe(
       catchError(this.handleError<VideoComments>('getComments', null))
     );
   }
@@ -21,7 +21,7 @@ export class CommentsService {
   public addComment(videoId, userComment) {
     console.log("Video ID " + videoId);
     console.log(userComment);
-    this.http.post("https://video-new-tube.herokuapp.com/"+videoId+"/comments", userComment).subscribe();
+    this.http.post("https://video-new-tube.herokuapp.com/videos/"+videoId+"/comments", userComment).subscribe();
   }
 
   private handleError<T> (operation = 'operation', result?: T) {

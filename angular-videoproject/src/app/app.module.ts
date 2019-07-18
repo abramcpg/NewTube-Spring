@@ -9,13 +9,15 @@ import {FormsModule} from "@angular/forms";
 import { VideoListComponent } from './video-list/video-list.component';
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 import {VideoService} from "./videoservice.service";
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CommentsComponent,
     VideoListComponent,
-    UploadVideoComponent
+    UploadVideoComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
