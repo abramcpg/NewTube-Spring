@@ -3,13 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Video } from './video';
 import { Observable } from 'rxjs';
 
+
 @Injectable()
 export class VideoService {
 
   private videoUrl: string;
 
   constructor(private http: HttpClient) {
-    this.videoUrl = 'https://video-new-tube.herokuapp.com/';
+    this.videoUrl = 'http://localhost:8080/videos';
   }
 
   public findAll(): Observable<Video[]> {
@@ -17,7 +18,7 @@ export class VideoService {
     return this.http.get<Video[]>(this.videoUrl);
   }
 
-  public save(fileToUpload: Video) {
-    return this.http.post<Video>(this.videoUrl + "/uploadFile", fileToUpload);
+  public save(fileToUpload: EventTarget) {
+    return this.http.post<Video>(this.videoUrl + '/uploadFile', fileToUpload);
   }
 }

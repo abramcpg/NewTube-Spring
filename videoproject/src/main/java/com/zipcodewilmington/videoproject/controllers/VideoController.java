@@ -35,7 +35,7 @@ public class VideoController {
 
 
 
-    @PostMapping("uploadFile")
+    @PostMapping("/uploadFile")
     public Video uploadFile(@RequestParam("file") MultipartFile file) {
         Video video = service.storeVideo(file);
 

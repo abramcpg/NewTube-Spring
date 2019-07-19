@@ -22,7 +22,7 @@ public class VideoService {
     }
 
     public Iterable<Video> index(){
-        return repository.findAll();
+        return repository.findVideosByColumn();
     }
 
 
