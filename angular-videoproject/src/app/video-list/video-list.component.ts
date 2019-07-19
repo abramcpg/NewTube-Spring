@@ -40,6 +40,17 @@ export class VideoListComponent implements OnInit {
     source.setAttribute('type', video.videoType);
 
 
+
+    let commentSource = document.createElement('source');
+    source.setAttribute('videoId', String(video.id))
+
+    let comments = document.getElementById('comments');
+    comments.appendChild(commentSource);
+
+
+
+
+
     videoPlayer.appendChild(source);
     //document.body.replaceChild(ogVideoPlayer, videoPlayer);
 

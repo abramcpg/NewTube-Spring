@@ -5,12 +5,48 @@
 </div>
 
 
-<section *ngFor="let comment of comments">
-  <p>
-    <b>{{comment.userId}}</b> created the following comment at {{comment.createdDate}}
-  </p>
-  <p>
-    {{comment.text}}
-  </p>
 
-</section>
+
+<!--<section *ngFor="let comment of comments">-->
+<!--  <p>-->
+<!--    <b>{{comment.userId}}</b> created the following comment at {{comment.createdDate}}-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    {{comment.text}}-->
+<!--  </p>-->
+
+<!--</section>-->
+
+<!--<section *ngFor="let comment of comments">-->
+<!--  <p>-->
+<!--    <b>{{comment.userId}}</b> created the following comment at {{comment.createdDate}}-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    {{comment.text}}-->
+<!--  </p>-->
+
+<!--</section>-->
+
+
+
+
+<div class="card my-5" id="video list">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">USER</th>
+        <th scope="col">COMMENT</th>
+        <th scope="col">POSTED ON</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let comment of comments">
+        <td> {{comment.userId}} </td>
+        <td>"{{ comment.text }}"</td>
+        <td>{{ comment.createdDate }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
