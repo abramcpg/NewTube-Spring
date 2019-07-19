@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Video } from '../video';
 import { VideoService } from '../videoservice.service';
+import {CommentsComponent} from "../comments/comments.component";
 
 @Component({
   selector: 'app-video-list',
@@ -47,6 +48,7 @@ export class VideoListComponent implements OnInit {
     let comments = document.getElementById('comments');
     comments.appendChild(commentSource);
 
+    //let commentSection = document.createElement('CommentsComponent');
 
 
 

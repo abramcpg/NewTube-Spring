@@ -1,0 +1,15 @@
+#postComment{
+  width: 500px;
+  padding: 10px;
+  border: 5px solid gray;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2em;
+  position:relative;
+  top:10px;
+}
+
+#addComment{
+  text-align: center;
+}

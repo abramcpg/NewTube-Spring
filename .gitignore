@@ -40,3 +40,4 @@ Thumbs.db
 target/
 **/node_modules/
 **/dist/
+**.idea/**

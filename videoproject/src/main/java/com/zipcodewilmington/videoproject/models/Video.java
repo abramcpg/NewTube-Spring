@@ -11,7 +11,7 @@ public class Video {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long videoId;
+    private Long videoId;
     private String videoName;
     private String videoPath;
     private String userId;
