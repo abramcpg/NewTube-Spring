@@ -10,8 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+import java.util.Optional;
 
+@RestController
+@CrossOrigin
 public class UserController {
     private UserService service;
 
@@ -29,5 +31,18 @@ public class UserController {
         service.postUserJson(userJson);
     }
 
+//    @GetMapping(value = "/users")
+//    public void getUsers() {
+//    service.index();
+
+    @GetMapping(value = "/users")
+    public ResponseEntity<Iterable<User>> getUsers() {
+      return new ResponseEntity<>(service.index(), HttpStatus.OK);
+    }
+
+  @GetMapping(value = "user/{id}")
+  public ResponseEntity<Optional<User>> getUserById(@PathVariable String id) {
+    return new ResponseEntity<>(service.getUserById(id), HttpStatus.OK);
+  }
 
 }

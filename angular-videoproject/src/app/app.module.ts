@@ -12,6 +12,8 @@ import {VideoService} from "./videoservice.service";
 import { UserComponent } from './user/user.component';
 import { UploadComponent } from './upload/upload.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { VideoPlayerComponent } from './video-player/video-player.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     VideoListComponent,
     UploadVideoComponent,
     UserComponent,
-    UploadComponent
+    UploadComponent,
+    VideoPlayerComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,

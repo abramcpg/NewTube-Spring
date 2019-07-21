@@ -9,11 +9,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.Optional;
 
 @Service
 public class UserService {
-    @Autowired
-    private UserRepository repository;
+
+  private UserRepository repository;
+
+  @Autowired
+  public UserService(UserRepository repository) {
+    this.repository = repository;
+  }
 
 
     public UserJson getUserJson(String userId){
@@ -30,8 +36,18 @@ public class UserService {
         user.setUserId(userJson.getUserId());
         user.setFirstName(userJson.getFirstName());
         user.setLastName(userJson.getLastName());
+        user.setPassword(userJson.getPassword());
         repository.save(user);
     }
+
+    public Iterable<User> index(){
+    return repository.findAll();
+  }
+
+    public Optional<User> getUserById(String id){
+    return repository.findById(id);
+  }
+
 
 
 }

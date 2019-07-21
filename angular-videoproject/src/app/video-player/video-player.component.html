@@ -1,0 +1,14 @@
+<div *ngIf="video">
+
+
+  <h2>Test {{video.videoPath}}</h2>
+  <h2>{{video.videoPath}}</h2>
+
+  <video class="center" id="videoPlayer" height="300" width="420" autoplay="autoplay" controls>
+    <source src="{{video.videoPath}}" type="{{video.videoType}}">
+  </video>
+
+<!--  <app-comments userId="abc" videoId="{{video.id}}" id="comments"></app-comments>-->
+
+
+</div>

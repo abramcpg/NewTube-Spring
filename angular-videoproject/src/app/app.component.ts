@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload';
+import {User} from "./user/user";
 
 
 @Component({
@@ -9,4 +10,7 @@ import { FileUploader } from 'ng2-file-upload';
 })
 export class AppComponent {
   title = 'Welcome to NewTube!';
+  user = new User();
+
+
 }

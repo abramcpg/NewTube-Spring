@@ -41,21 +41,21 @@
 
 
 
-<div class="card my-5" id="video list">
-  <div class="card-body">
-    <table class="table table-bordered table-striped">
+<div class="card my-5">
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-bordered table-striped" id="comment list">
       <thead class="thead-dark">
       <tr>
         <th scope="col">USER</th>
         <th scope="col">COMMENT</th>
-        <th scope="col">POSTED ON</th>
+        <th scope="col">POSTED</th>
       </tr>
       </thead>
       <tbody>
       <tr *ngFor="let comment of comments">
         <td> {{comment.userId}} </td>
         <td>"{{ comment.text }}"</td>
-        <td>{{ comment.createdDate }}</td>
+        <td>{{ comment.createdDate | date:"MM/dd/yy"}}</td>
       </tr>
       </tbody>
     </table>

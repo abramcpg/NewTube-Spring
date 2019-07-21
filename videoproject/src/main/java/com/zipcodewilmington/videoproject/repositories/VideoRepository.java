@@ -9,4 +9,7 @@ import org.springframework.stereotype.Repository;
 public interface VideoRepository extends CrudRepository<Video, Long> {
   @Query(value = "SELECT new com.zipcodewilmington.videoproject.models.VideoDTO(c.videoId, c.videoName, c.userId, c.videoPath, c.videoType) FROM Video c")
   Iterable<Video> findVideosByColumn();
+
+  @Query(value = "SELECT new com.zipcodewilmington.videoproject.models.VideoDTO(c.videoId, c.videoName, c.userId, c.videoPath, c.videoType) FROM Video c")
+  Iterable<Video> findVideoById();
 }

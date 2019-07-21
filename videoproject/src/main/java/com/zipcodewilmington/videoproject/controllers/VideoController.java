@@ -31,7 +31,10 @@ public class VideoController {
         return new ResponseEntity<>(service.index(), HttpStatus.OK);
     }
 
-
+    @GetMapping(value = "videostorage/{id}")
+      public ResponseEntity<Iterable<Video>> getVideoById(@PathVariable Long id) {
+    return new ResponseEntity<>(service.getVideoById(), HttpStatus.OK);
+    }
 
 
 
@@ -50,7 +53,10 @@ public class VideoController {
 
 
 
-    @RequestMapping(method = RequestMethod.POST)
+
+
+
+  @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Video> create(@RequestBody Video video) {
         return new ResponseEntity<>(service.create(video), HttpStatus.CREATED);
     }
@@ -64,6 +70,7 @@ public class VideoController {
     public ResponseEntity<Boolean> destroy(@PathVariable Long id) {
         return new ResponseEntity<>(service.delete(id), HttpStatus.OK);
     }
+
 
 
     @GetMapping("/{fileId}")
