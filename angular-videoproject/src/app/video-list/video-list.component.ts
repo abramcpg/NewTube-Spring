@@ -43,7 +43,7 @@ export class VideoListComponent implements OnInit {
 
 
     let commentSource = document.createElement('source');
-    source.setAttribute('videoId', String(video.id))
+    source.setAttribute('videoId', String(video.videoId))
 
     let comments = document.getElementById('comments');
     comments.appendChild(commentSource);

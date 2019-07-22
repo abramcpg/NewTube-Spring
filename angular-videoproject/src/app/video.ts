@@ -1,5 +1,5 @@
 export class Video {
-    id: number;
+    videoId: number;
     videoName: string;
     videoPath: string;
     userId: string;

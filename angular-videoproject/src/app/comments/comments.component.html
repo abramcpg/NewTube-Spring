@@ -1,48 +1,19 @@
 
-<!--<div class="card my-6" id="comment list">-->
-<!--  <div class="card-body">-->
-<!--    <table class="table table-bordered table-striped">-->
-<!--      <thead class="thead-dark">-->
+<!--<div class="card my-6" id="add Comment">-->
+
 <div id="postComment">
-<h2>Comments</h2>
+<!--<h2>Comments</h2>-->
           <div>
-            <textarea [(ngModel)]="commentText" placeholder="Add a comment" rows="3" cols="50"></textarea><br/>
+            <textarea id="commentBox" [(ngModel)]="commentText" cols="50" placeholder="Add a comment" rows="3"></textarea><br/>
           <button  id="addComment" (click)="addComment()">Add </button>
           </div>
 </div>
-<!--      </thead>-->
-<!--    </table>-->
-<!--  </div>-->
 <!--</div>-->
 
 
 
-
-<!--<section *ngFor="let comment of comments">-->
-<!--  <p>-->
-<!--    <b>{{comment.userId}}</b> created the following comment at {{comment.createdDate}}-->
-<!--  </p>-->
-<!--  <p>-->
-<!--    {{comment.text}}-->
-<!--  </p>-->
-
-<!--</section>-->
-
-<!--<section *ngFor="let comment of comments">-->
-<!--  <p>-->
-<!--    <b>{{comment.userId}}</b> created the following comment at {{comment.createdDate}}-->
-<!--  </p>-->
-<!--  <p>-->
-<!--    {{comment.text}}-->
-<!--  </p>-->
-
-<!--</section>-->
-
-
-
-
 <div class="card my-5">
-  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+  <div class="table-wrapper-scroll-y my-custom-scrollbar" id="comments">
     <table class="table table-bordered table-striped" id="comment list">
       <thead class="thead-dark">
       <tr>

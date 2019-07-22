@@ -12,4 +12,6 @@ import java.util.Collection;
 public interface CommentRepository extends CrudRepository<Comment, Long> {
     @Query("SELECT c FROM Comment c WHERE c.videoId = ?1")
     Collection<Comment> findCommentByVideoId(int videoId);
+
+    Iterable<Comment> findCommentsByVideoId(int videoId);
 }
