@@ -12,7 +12,8 @@ export class UploadComponent implements OnInit {
   url = "http://localhost:8080/videos/uploadFile";
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { }
+  constructor(private formBuilder: FormBuilder,
+              private httpClient: HttpClient) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -27,14 +28,21 @@ export class UploadComponent implements OnInit {
     }
   }
 
-  onSubmit() {
-    const formData = new FormData();
-    formData.append('file', this.form.get('profile').value);
 
-    this.httpClient.post<any>(this.url, formData).subscribe(
-      (res) => console.log(res),
-      (err) => console.log(err)
-    );
-  }
+    onSubmit() {
+      const uploadHTML = document.getElementById('uploadResponse');
+      uploadHTML.innerHTML = "<h5> Uploading, please wait... </h5>"
+
+
+      const formData = new FormData();
+      formData.append('file', this.form.get('profile').value);
+
+      this.httpClient.post<any>(this.url, formData).subscribe(
+        () => uploadHTML.innerHTML = "<h5> Video uploaded successfully! </h5>",
+        () => uploadHTML.innerHTML = "<h5> An error occurred. Please try again. </h5>"
+      );
+    }
+
+
 
 }

@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 import { CommentsComponent } from './comments/comments.component';
 import {FormsModule} from "@angular/forms";
 import { VideoListComponent } from './video-list/video-list.component';
-import { UploadVideoComponent } from './upload-video/upload-video.component';
-import {VideoService} from "./videoservice.service";
+import {VideoService} from "./services/videoservice.service";
 import { UserComponent } from './user/user.component';
 import { UploadComponent } from './upload/upload.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -20,7 +19,6 @@ import { UserLoginComponent } from './user-login/user-login.component';
     AppComponent,
     CommentsComponent,
     VideoListComponent,
-    UploadVideoComponent,
     UserComponent,
     UploadComponent,
     VideoPlayerComponent,

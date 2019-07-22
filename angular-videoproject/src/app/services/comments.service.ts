@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Comment, VideoComments} from "./comments/comment";
+import {Comment, VideoComments} from "../comments/comment";
 import { HttpClient } from '@angular/common/http';
 import {catchError, tap} from "rxjs/operators";
 import {Observable, of} from "rxjs";

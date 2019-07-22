@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Video} from "../video";
-import {VideoService} from "../videoservice.service";
-import {ActivatedRoute} from "@angular/router";
+import { Video} from "../classes/video";
+import {VideoService} from "../services/videoservice.service";
+import {ActivatedRoute, Router} from "@angular/router";
 import {Observable} from "rxjs";
 
 @Component({
@@ -15,7 +15,8 @@ export class VideoPlayerComponent implements OnInit {
   @Input() video: Video;
 
   constructor(private videoService: VideoService,
-              private route: ActivatedRoute
+              private route: ActivatedRoute,
+              private router: Router
               //private location: Location
 ) { }
 
@@ -27,17 +28,12 @@ export class VideoPlayerComponent implements OnInit {
 
   getVideo() {
     const id = +this.route.snapshot.paramMap.get('videoId');
-    //console.log(`videoId test:` + videoId);
-    this.videoService.getVideoByIdTest(id).subscribe(video => this.video = video);
+    this.videoService.getVideoById(id).subscribe(video => this.video = video);
 
-    console.log(this.video)
-    //this.videoService.videoPromise(videoId).then(video => this.video = video);
+  }
 
-    //this.video = this.videoService.findVideoById(videoId).s;
-
-    //this.video = this.videoService.getVideoByIdTest(videoId).subscribe(async res => {
-
-    // })
+  gotoVideo(videoId: Number): void {
+    this.router.navigate(['/videos/videoplayer' + videoId]);
   }
 
 }
