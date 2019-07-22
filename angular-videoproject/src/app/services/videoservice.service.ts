@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Video } from './video';
+import { Video } from '../classes/video';
 import {Observable, of} from 'rxjs';
 import {tap, catchError} from "rxjs/operators";
 
@@ -11,8 +11,6 @@ const httpOptions = {
 
 @Injectable({ providedIn: 'root' })
 export class VideoService {
-
-  //private videoUrl: 'http://localhost:8080/videos';
 
   private videoUrl: string;
 
@@ -25,16 +23,12 @@ export class VideoService {
     return this.http.get<Video[]>(this.videoUrl);
   }
 
-  public findVideoById(id: number): Observable<Video> {
-    console.log(this.http.get<Video>(this.videoUrl  + `/videoplayer/${id}`));
-    return this.http.get<Video>(this.videoUrl + `/videoplayer/${id}`);
-  }
 
   public save(fileToUpload: EventTarget) {
     return this.http.post<Video>(this.videoUrl + '/uploadFile', fileToUpload);
   }
 
-  getVideoByIdTest(id: number): Observable<Video> {
+  getVideoById(id: number): Observable<Video> {
     const url = `${this.videoUrl}/videostorage/${id}`;
     return this.http.get<Video>(url).pipe(
       tap(_ => this.log(`fetched video id=${id}`)),
@@ -42,11 +36,6 @@ export class VideoService {
     );
   }
 
-  videoPromise(id: number): Promise<Video> {
-    const url = `${this.videoUrl}/videostorage/${id}`;
-    return this.http.get(url)
-      .toPromise().then(response => response as Video);
-  }
 
 
   private handleError<T> (operation = 'operation', result?: T) {

@@ -11,7 +11,6 @@ import {UserLoginComponent} from "./user-login/user-login.component";
 
 const routes: Routes = [
   { path: 'videos', component: VideoListComponent },
-  { path: 'adduser', component: UploadVideoComponent },
   { path: 'login', component: UserLoginComponent},
   { path: 'signup', component: UserComponent},
   { path: 'addvideo', component: UploadComponent},
