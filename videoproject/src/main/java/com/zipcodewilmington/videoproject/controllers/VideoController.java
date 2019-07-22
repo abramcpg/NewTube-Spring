@@ -32,8 +32,8 @@ public class VideoController {
     }
 
     @GetMapping(value = "videostorage/{id}")
-      public ResponseEntity<Iterable<Video>> getVideoById(@PathVariable Long id) {
-    return new ResponseEntity<>(service.getVideoById(), HttpStatus.OK);
+      public ResponseEntity<Video> getVideoById(@PathVariable Long id) {
+    return new ResponseEntity<>(service.getVideoById(id), HttpStatus.OK);
     }
 
 

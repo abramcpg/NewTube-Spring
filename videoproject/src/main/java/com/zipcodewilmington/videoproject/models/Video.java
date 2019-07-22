@@ -39,11 +39,11 @@ public class Video {
     public Video() {}
 
 
-    public long getVideoId() {
+    public Long getVideoId() {
         return videoId;
     }
 
-    public void setVideoId(long videoId) {
+    public void setVideoId(Long videoId) {
         this.videoId = videoId;
     }
 

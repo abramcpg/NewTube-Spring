@@ -25,8 +25,8 @@ public class VideoService {
         return repository.findVideosByColumn();
     }
 
-    public Iterable<Video> getVideoById(){
-    return repository.findVideoById();
+    public Video getVideoById(long id){
+    return repository.findVideoByVideoId(id);
   }
 
 
