@@ -37,6 +37,10 @@ public class CommentService {
         return videoComments;
     }
 
+    public Iterable<Comment> getCommentsByVideoId(int videoId){
+      return repository.findCommentsByVideoId(videoId);
+    }
+
     public void postVideoComments(int videoId, UserComment userComment) {
         Comment comment = new Comment();
         comment.setCommentText(userComment.getText());

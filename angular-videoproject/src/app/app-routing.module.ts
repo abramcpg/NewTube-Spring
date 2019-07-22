@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'login', component: UserLoginComponent},
   { path: 'signup', component: UserComponent},
   { path: 'addvideo', component: UploadComponent},
-  { path: 'videos/videoplayer/:id', component: VideoPlayerComponent},
+  { path: 'videos/videoplayer/:videoId', component: VideoPlayerComponent},
 
 
 ];
