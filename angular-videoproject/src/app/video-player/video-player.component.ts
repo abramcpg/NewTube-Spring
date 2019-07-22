@@ -28,9 +28,9 @@ export class VideoPlayerComponent implements OnInit {
   getVideo() {
     const id = +this.route.snapshot.paramMap.get('id');
     //console.log(`id test:` + id);
-    return this.videoService.getVideoByIdTest(id).subscribe(video => this.video = video);
+    this.videoService.getVideoByIdTest(id).subscribe(video => this.video = video[0]);
 
-
+    console.log(this.video)
     //this.videoService.videoPromise(id).then(video => this.video = video);
 
     //this.video = this.videoService.findVideoById(id).s;

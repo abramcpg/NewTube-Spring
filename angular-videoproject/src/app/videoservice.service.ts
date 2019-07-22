@@ -34,12 +34,16 @@ export class VideoService {
     return this.http.post<Video>(this.videoUrl + '/uploadFile', fileToUpload);
   }
 
-  getVideoByIdTest(id: number): Observable<Video> {
+  getVideoByIdTest(id: number): Observable<Video[]> {
     const url = `${this.videoUrl}/videostorage/${id}`;
-    return this.http.get<Video>(url).pipe(
+    let asdf = this.http.get<Video[]>(url).pipe(
       tap(_ => this.log(`fetched video id=${id}`)),
       catchError(this.handleError<Video>(`getVideo id=${id}`))
     );
+
+    console.log(asdf);
+
+    return asdf as Observable<Video[]>;
   }
 
   videoPromise(id: number): Promise<Video> {
