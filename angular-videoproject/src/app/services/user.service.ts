@@ -21,21 +21,23 @@ export class UserService {
 
   public logIn(user : User){
 
+    console.log(user.userId);
+    console.log(user.password);
+    console.log(this.currentUser);
+    let password = user.password;
+
     this.http.get<User>("http://localhost:8080/user/" + user.userId).subscribe(user =>
     {
-      let tempUser = user;
-      if (user.password === tempUser.password && user.password === tempUser.password){
-        this.currentUser = tempUser;
+      if (user.password === password){
+        this.currentUser = user;
+        console.log('it worked')
       } else {
         this.currentUser = null;
         console.log('Wrong username or password');
       }
-
     });
 
-    console.log(user.userId);
-    console.log(user.password);
-    console.log(this.currentUser);
+
 
   }
 
