@@ -10,7 +10,7 @@ export class VideoService {
   private videoUrl: string;
 
   constructor(private http: HttpClient) {
-    this.videoUrl = 'http://localhost:8080/videos';
+    this.videoUrl = 'https://video-new-tube.herokuapp.com/videos/';
   }
 
   public findAll(): Observable<Video[]> {

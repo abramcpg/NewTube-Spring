@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UploadComponent implements OnInit {
 
-  url = "http://localhost:8080/videos/uploadFile";
+  url = "https://video-new-tube.herokuapp.com/videos/uploadFile";
   form: FormGroup;
 
   constructor(private formBuilder: FormBuilder,
