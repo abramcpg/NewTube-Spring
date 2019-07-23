@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {User} from "./user/user";
+import {UserService} from "./services/user.service";
 
 
 @Component({
@@ -10,6 +11,9 @@ import {User} from "./user/user";
 export class AppComponent {
   title = 'Welcome to NewTube!';
   user = new User();
+
+
+  constructor() {}
 
 
 }

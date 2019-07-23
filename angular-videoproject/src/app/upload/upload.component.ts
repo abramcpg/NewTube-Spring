@@ -21,7 +21,7 @@ export class UploadComponent implements OnInit {
     });
   }
 
-  mupload(event) {
+  upload(event) {
     if (event.target.files.length > 0) {
       const file = event.target.files[0];
       this.form.get('profile').setValue(file);
@@ -42,7 +42,5 @@ export class UploadComponent implements OnInit {
         () => uploadHTML.innerHTML = "<h5> An error occurred. Please try again. </h5>"
       );
     }
-
-
 
 }

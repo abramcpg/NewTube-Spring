@@ -37,7 +37,6 @@ public class VideoController {
     }
 
 
-
     @PostMapping("/uploadFile")
     public Video uploadFile(@RequestParam("file") MultipartFile file) {
         Video video = service.storeVideo(file);
@@ -51,12 +50,7 @@ public class VideoController {
         return video;
     }
 
-
-
-
-
-
-  @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Video> create(@RequestBody Video video) {
         return new ResponseEntity<>(service.create(video), HttpStatus.CREATED);
     }
@@ -71,8 +65,6 @@ public class VideoController {
         return new ResponseEntity<>(service.delete(id), HttpStatus.OK);
     }
 
-
-
     @GetMapping("/{fileId}")
     public ResponseEntity<Resource> downloadFile(@PathVariable Long fileId) {
         Video video = service.getFile(fileId);
@@ -82,12 +74,6 @@ public class VideoController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + video.getVideoName() + "\"")
                 .body(new ByteArrayResource(video.getVideoBytes()));
     }
-
-
-
-
-
-
 
 
 }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {UploadVideoComponent} from './upload-video/upload-video.component';
 import {VideoListComponent} from './video-list/video-list.component';
 import {UserComponent} from './user/user.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
