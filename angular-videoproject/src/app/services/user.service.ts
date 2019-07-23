@@ -15,7 +15,7 @@ export class UserService {
 
   public addUser(user) {
     console.log(user);
-    this.http.post("http://localhost:8080/users", user).subscribe();
+    this.http.post("https://video-new-tube.herokuapp.com/users", user).subscribe();
   }
 
 
@@ -26,7 +26,7 @@ export class UserService {
     console.log(this.currentUser);
     let password = user.password;
 
-    this.http.get<User>("http://localhost:8080/user/" + user.userId).subscribe(user =>
+    this.http.get<User>("https://video-new-tube.herokuapp.com/user/" + user.userId).subscribe(user =>
     {
       if (user.password === password){
         this.currentUser = user;
