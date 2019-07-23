@@ -24,8 +24,6 @@ export class UserLoginComponent implements OnInit {
 
 
   onSubmit() {
-    // this.videoService.save(this.video).subscribe(result => this.gotoVideoList());
-    //this.service.addUser(event);
     //this.service.logIn(event);
     console.log(this.user);
     this.service.logIn(this.user);

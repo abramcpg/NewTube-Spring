@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Video } from '../classes/video';
 import { VideoService } from '../services/videoservice.service';
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-video-list',
@@ -12,7 +11,7 @@ export class VideoListComponent implements OnInit {
 
   videos: Video[];
 
-  constructor(private videoService: VideoService, private router: Router) {
+  constructor(private videoService: VideoService) {
   }
 
   ngOnInit() {
@@ -20,12 +19,5 @@ export class VideoListComponent implements OnInit {
       this.videos = data;
     });
   }
-
-  gotoVideo(videoId: Number): void {
-    this.router.navigate(['/videos/videoplayer' + videoId]);
-  }
-
-
-
 
 }
