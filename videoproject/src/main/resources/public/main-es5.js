@@ -235,12 +235,12 @@ var CommentsService = /** @class */ (function () {
         this.http = http;
     }
     CommentsService.prototype.getComments = function (videoId) {
-        return this.http.get("https://video-new-tube.herokuapp.com/videos/" + videoId + "/comments").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('getComments', null)));
+        return this.http.get("http://localhost:8080/videos" + videoId + "/comments").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('getComments', null)));
     };
     CommentsService.prototype.addComment = function (videoId, userComment) {
         console.log("Video ID " + videoId);
         console.log(userComment);
-        this.http.post("https://video-new-tube.herokuapp.com/videos/" + videoId + "/comments", userComment).subscribe();
+        this.http.post("http://localhost:8080/videos" + videoId + "/comments", userComment).subscribe();
     };
     CommentsService.prototype.handleError = function (operation, result) {
         if (operation === void 0) { operation = 'operation'; }
@@ -540,7 +540,7 @@ __webpack_require__.r(__webpack_exports__);
 var VideoService = /** @class */ (function () {
     function VideoService(http) {
         this.http = http;
-        this.videoUrl = 'https://video-new-tube.herokuapp.com/videos';
+        this.videoUrl = 'http://localhost:8080/videos';
     }
     VideoService.prototype.findAll = function () {
         console.log(this.http.get(this.videoUrl));

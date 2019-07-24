@@ -514,7 +514,7 @@ __webpack_require__.r(__webpack_exports__);
 let VideoService = class VideoService {
     constructor(http) {
         this.http = http;
-        this.videoUrl = 'https://video-new-tube.herokuapp.com/videos';
+        this.videoUrl = 'http://localhost:8080/videos';
     }
     findAll() {
         console.log(this.http.get(this.videoUrl));
