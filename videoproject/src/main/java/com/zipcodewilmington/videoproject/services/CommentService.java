@@ -17,10 +17,16 @@ import java.util.List;
 @Transactional
 public class CommentService {
 
-    @Autowired
-    private CommentRepository repository;
 
-    public VideoComments getVideoComments(int videoId){
+  private CommentRepository repository;
+
+  @Autowired
+  public CommentService(CommentRepository repository) {
+    this.repository = repository;
+  }
+
+
+  public VideoComments getVideoComments(int videoId){
         Collection<Comment> comments = repository.findCommentByVideoId(videoId);
         //converting database to JSON
         List<UserComment> userComments = new ArrayList<>();

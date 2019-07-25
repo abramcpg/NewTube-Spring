@@ -14,7 +14,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 @RequestMapping("/videos")
 public class VideoController {
 
@@ -26,7 +26,7 @@ public class VideoController {
         this.service = service;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public ResponseEntity<Iterable<Video>> index(){
         return new ResponseEntity<>(service.index(), HttpStatus.OK);
     }
@@ -50,12 +50,12 @@ public class VideoController {
         return video;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @PostMapping
     public ResponseEntity<Video> create(@RequestBody Video video) {
         return new ResponseEntity<>(service.create(video), HttpStatus.CREATED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT)
+    @PutMapping
     public ResponseEntity<Video> update(@PathVariable Long id, @RequestBody Video video) {
         return new ResponseEntity<>(service.update(id, video), HttpStatus.OK);
     }
