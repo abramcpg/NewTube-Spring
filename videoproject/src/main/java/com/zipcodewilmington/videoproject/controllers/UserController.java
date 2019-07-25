@@ -45,4 +45,7 @@ public class UserController {
     return new ResponseEntity<>(service.getUserById(id), HttpStatus.OK);
   }
 
+  @PutMapping(value = "/login")
+  public void login(@RequestBody UserJson userJson){ service.login(userJson.getUserId(), userJson.getPassword());}
+
 }
