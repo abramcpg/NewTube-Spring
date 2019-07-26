@@ -27,8 +27,8 @@ public class CommentController {
     }
 
     @GetMapping(value = "/videos/{videoId}/comments")
-    public ResponseEntity<Iterable<Comment>> getCommentsByVideoId(@PathVariable("videoId") int videoId){
-      return new ResponseEntity<>(commentService.getCommentsByVideoId(videoId), HttpStatus.OK);
+    public ResponseEntity<VideoComments> getCommentsByVideoId(@PathVariable("videoId") int videoId){
+      return new ResponseEntity<>(commentService.getVideoComments(videoId), HttpStatus.OK);
     }
 
 
