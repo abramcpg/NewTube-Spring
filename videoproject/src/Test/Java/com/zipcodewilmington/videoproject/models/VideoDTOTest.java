@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class VideoDTOTest {
 
-  private VideoDTO videoDTO;
+  private VideoDTO videoDTO = new VideoDTO();
 
   @Test
   public void getVideoId() {
