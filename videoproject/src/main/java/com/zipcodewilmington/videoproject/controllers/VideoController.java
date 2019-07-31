@@ -14,7 +14,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
 @RestController
-@CrossOrigin
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/videos")
 public class VideoController {
 
@@ -37,8 +37,8 @@ public class VideoController {
     }
 
 
-    @PostMapping("/uploadFile")
-    public Video uploadFile(@RequestParam("file") MultipartFile file) {
+    @PostMapping(value="/uploadFile")
+    public Video uploadFile(@RequestPart MultipartFile file, @RequestParam String title) {
         Video video = service.storeVideo(file);
 
         String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
@@ -46,6 +46,9 @@ public class VideoController {
                 .path(String.valueOf(video.getVideoId()))
                 .toUriString();
         video.setVideoPath(fileDownloadUri);
+        if (!title.equals("")) {
+          video.setVideoName(title);
+        }
         update(video.getVideoId(), video);
         return video;
     }
