@@ -15,30 +15,31 @@ import java.util.Optional;
 @RestController
 @CrossOrigin
 public class UserController {
-    private UserService service;
+  private UserService service;
 
-    @Autowired
-    public UserController(UserService service){
-        this.service = service;
-    }
+  @Autowired
+  public UserController(UserService service) {
+    this.service = service;
+  }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/users/{userId}")
-    public UserJson getVideoComments(@PathVariable("userId") String userId) {
-        return service.getUserJson(userId);
-    }
-    @RequestMapping(method = RequestMethod.POST,value = "/users")
-    public void postUserJson(@RequestBody UserJson userJson) {
-        service.postUserJson(userJson);
-    }
+  @RequestMapping(method = RequestMethod.GET, value = "/users/{userId}")
+  public UserJson getVideoComments(@PathVariable("userId") String userId) {
+    return service.getUserJson(userId);
+  }
+
+  @RequestMapping(method = RequestMethod.POST, value = "/users")
+  public void postUserJson(@RequestBody UserJson userJson) {
+    service.postUserJson(userJson);
+  }
 
 //    @GetMapping(value = "/users")
 //    public void getUsers() {
 //    service.index();
 
-    @GetMapping(value = "/users")
-    public ResponseEntity<Iterable<User>> getUsers() {
-      return new ResponseEntity<>(service.index(), HttpStatus.OK);
-    }
+  @GetMapping(value = "/users")
+  public ResponseEntity<Iterable<User>> getUsers() {
+    return new ResponseEntity<>(service.index(), HttpStatus.OK);
+  }
 
   @GetMapping(value = "user/{id}")
   public ResponseEntity<Optional<User>> getUserById(@PathVariable String id) {
@@ -46,6 +47,12 @@ public class UserController {
   }
 
   @PutMapping(value = "/login")
-  public void login(@RequestBody UserJson userJson){ service.login(userJson.getUserId(), userJson.getPassword());}
-
+  public ResponseEntity<Optional<User>> login(@RequestBody UserJson userJson) {
+    User user = service.login(userJson.getUserId(), userJson.getPassword());
+    if (user == null) {
+      return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+    } else {
+      return new ResponseEntity<>(service.getUserById(user.getUserId()), HttpStatus.OK);
+    }
+  }
 }

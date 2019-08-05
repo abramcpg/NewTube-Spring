@@ -8,6 +8,16 @@ public class VideoDTO {
   private String videoPath;
   private String videoType;
 
+  public VideoDTO(){}
+
+  public VideoDTO(Long videoId, String videoName, String userId, String videoPath, String videoType) {
+    this.videoId = videoId;
+    this.videoName = videoName;
+    this.userId = userId;
+    this.videoPath = videoPath;
+    this.videoType = videoType;
+  }
+
   public Long getVideoId() {
     return videoId;
   }
