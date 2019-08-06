@@ -14,7 +14,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin("http://localhost:4200")
 @RequestMapping("/videos")
 public class VideoController {
 
@@ -26,7 +26,7 @@ public class VideoController {
         this.service = service;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public ResponseEntity<Iterable<Video>> index(){
         return new ResponseEntity<>(service.index(), HttpStatus.OK);
     }
@@ -37,8 +37,8 @@ public class VideoController {
     }
 
 
-    @PostMapping("/uploadFile")
-    public Video uploadFile(@RequestParam("file") MultipartFile file) {
+    @PostMapping(value="/uploadFile")
+    public Video uploadFile(@RequestPart MultipartFile file, @RequestParam String title) {
         Video video = service.storeVideo(file);
 
         String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
@@ -46,16 +46,19 @@ public class VideoController {
                 .path(String.valueOf(video.getVideoId()))
                 .toUriString();
         video.setVideoPath(fileDownloadUri);
+        if (!title.equals("")) {
+          video.setVideoName(title);
+        }
         update(video.getVideoId(), video);
         return video;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @PostMapping
     public ResponseEntity<Video> create(@RequestBody Video video) {
         return new ResponseEntity<>(service.create(video), HttpStatus.CREATED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT)
+    @PutMapping
     public ResponseEntity<Video> update(@PathVariable Long id, @RequestBody Video video) {
         return new ResponseEntity<>(service.update(id, video), HttpStatus.OK);
     }

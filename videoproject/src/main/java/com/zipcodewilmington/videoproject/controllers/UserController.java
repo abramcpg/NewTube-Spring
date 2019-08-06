@@ -1,9 +1,7 @@
 package com.zipcodewilmington.videoproject.controllers;
 
-import com.zipcodewilmington.videoproject.models.Comment;
 import com.zipcodewilmington.videoproject.models.User;
 import com.zipcodewilmington.videoproject.models.UserJson;
-import com.zipcodewilmington.videoproject.services.CommentService;
 import com.zipcodewilmington.videoproject.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,29 +20,26 @@ public class UserController {
     this.service = service;
   }
 
-  @RequestMapping(method = RequestMethod.GET, value = "/users/{userId}")
-  public UserJson getVideoComments(@PathVariable("userId") String userId) {
-    return service.getUserJson(userId);
-  }
 
-  @RequestMapping(method = RequestMethod.POST, value = "/users")
-  public void postUserJson(@RequestBody UserJson userJson) {
-    service.postUserJson(userJson);
-  }
+    @GetMapping(value = "/users/{userId}")
+    public UserJson getVideoComments(@PathVariable("userId") String userId) {
+        return service.getUserJson(userId);
+    }
 
-//    @GetMapping(value = "/users")
-//    public void getUsers() {
-//    service.index();
+    @PostMapping(value = "/users")
+    public void postUserJson(@RequestBody UserJson userJson) {
+        service.postUserJson(userJson);
+    }
 
-  @GetMapping(value = "/users")
-  public ResponseEntity<Iterable<User>> getUsers() {
-    return new ResponseEntity<>(service.index(), HttpStatus.OK);
-  }
+    @GetMapping(value = "/users")
+    public ResponseEntity<Iterable<User>> getUsers() {
+      return new ResponseEntity<>(service.index(), HttpStatus.OK);
+    }
 
-  @GetMapping(value = "user/{id}")
-  public ResponseEntity<Optional<User>> getUserById(@PathVariable String id) {
-    return new ResponseEntity<>(service.getUserById(id), HttpStatus.OK);
-  }
+    @GetMapping(value = "user/{id}")
+    public ResponseEntity<Optional<User>> getUserById(@PathVariable String id) {
+      return new ResponseEntity<>(service.getUserById(id), HttpStatus.OK);
+    }
 
   @PutMapping(value = "/login")
   public ResponseEntity<Optional<User>> login(@RequestBody UserJson userJson) {
